@@ -1,0 +1,11 @@
+@mixin md-size {
+  @media screen and (min-width: $mid) {
+    @content;
+  }
+}
+
+@mixin lg-size {
+  @media screen and (min-width: $large) {
+    @content;
+  }
+}

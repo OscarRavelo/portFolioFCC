@@ -1,0 +1,45 @@
+.projects {
+  width: 100%;
+  background-color: $secondary-color;
+  #project-title {
+    color: darken($color: $primary-color, $amount: 20%);
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid $secondary-color;
+  }
+
+  &__items {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-auto-rows: 20%;
+    justify-items: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+    width: 90%;
+    height: 350px;
+    background: darken($color: $primary-color, $amount: 20%);
+    border-radius: 25px;
+    overflow: hidden;
+  }
+
+  &__title {
+    color: black;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  &__image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

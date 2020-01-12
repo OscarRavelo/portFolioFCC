@@ -1,0 +1,12 @@
+$primary-color: #d9a76a;
+$secondary-color: #0d0d0d;
+$mid: 700px;
+$large: 900px;
+
+@function text-color($color) {
+  @if lightness($color) > 40% {
+    @return $secondary-color;
+  } @else {
+    @return $primary-color;
+  }
+}

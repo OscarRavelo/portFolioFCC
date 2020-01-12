@@ -1,0 +1,27 @@
+@import "variables";
+@import "resets";
+@import "header";
+@import "welcome";
+@import "projects";
+@import "footer";
+@import "main";
+@import "responsive";
+
+@include md-size {
+  .projects__items {
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 35%;
+  }
+
+  footer {
+    margin-top: 5rem;
+  }
+}
+
+@include lg-size {
+  .projects__items {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 50%;
+    grid-auto-flow: 50%;
+  }
+}
